@@ -1,0 +1,48 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main" style="text-align: justify">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    <main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Project Overview</h1>
+        </header>
+
+        <section class="post-content">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet orci ac orci rutrum ornare. Duis pulvinar risus ut libero vehicula cursus vitae sit amet ante. Sed non placerat mauris. Nullam eros quam, vulputate quis aliquam vitae, ornare nec massa. Pellentesque nec ipsum mauris. Mauris scelerisque hendrerit metus vel congue. Aenean nec luctus risus.
+
+Donec sodales erat vel ipsum congue placerat. Duis eget ex elementum, lacinia lorem eu, interdum lorem. Morbi eu ipsum pellentesque, euismod lorem in, feugiat libero. Morbi at pretium nunc. Suspendisse potenti. Nullam sit amet tellus sit amet erat tempor accumsan et at tortor. Mauris imperdiet nec dui a efficitur. Ut id consectetur tellus. Vestibulum varius arcu quis pharetra rhoncus. Nullam a egestas mi. Donec urna augue, pellentesque at rhoncus eget, egestas quis tellus. Nulla lobortis, nisi non aliquet facilisis, diam dui consectetur sapien, ac luctus justo magna in ipsum. Curabitur auctor felis vitae erat facilisis cursus. Donec euismod dui in faucibus accumsan. Sed et felis purus.
+<p><img src="http://fineprintnyc.com/images/blog/history-of-logos/google/google-logo.png" alt="The Google Logo"></p>
+Proin id tortor elit. Nunc rutrum efficitur metus. Fusce rutrum faucibus nunc, vitae pulvinar elit aliquet in. Pellentesque dolor tellus, vulputate id odio efficitur, tincidunt mollis nibh. Vestibulum viverra eros et elit blandit, a molestie elit facilisis. Cras eu arcu ut erat aliquam interdum. Nulla sit amet metus quis velit consequat fermentum. Praesent id feugiat enim, ut rhoncus neque.
+
+Fusce varius odio dolor, nec scelerisque elit facilisis sed. Donec pharetra bibendum est sit amet efficitur. Nulla mollis quis ligula eget molestie. Quisque consectetur dui nibh, fermentum tristique sapien dapibus et. Sed nec nibh felis. Sed eget sem ultrices, faucibus elit maximus, imperdiet magna. Etiam eu elementum dui, a pharetra ex. Mauris vitae felis nec erat interdum aliquet non ut elit. Aliquam vel lorem augue. Sed accumsan nec ante elementum commodo. Nunc vitae tristique velit, id tristique massa. Cras congue, dolor at ultricies egestas, justo orci porta sapien, quis rhoncus elit mi a arcu. Aliquam a mi eleifend, lacinia sapien quis, pretium sem. Integer tristique cursus tortor, sed volutpat purus vulputate ut. Nunc at suscipit neque, non imperdiet purus.
+
+Aliquam volutpat volutpat condimentum. Vestibulum sed lacinia orci. Aenean vel ipsum eros. Sed a sodales dolor, vitae lacinia nisl. Maecenas condimentum arcu tortor, at varius nulla accumsan non. Integer sit amet nisi lacus. Integer quam tellus, tristique vitae urna vitae, luctus tristique nulla. Aliquam erat volutpat. Nam tempus sollicitudin leo, quis feugiat ligula fermentum ut.</p>
+
+        </section>
+
+
+    </article>
+</main>
+</main>

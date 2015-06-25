@@ -2059,6 +2059,22 @@ body:not(.post-template) .post-title {
     }
 }
 
+.normal-table tbody > tr:nth-child(odd) > td,
+.normal-table tbody > tr:nth-child(odd) > th {
+    background-color: white !important;
+    background: white !important;
+    border: none;
+}
+.normal-table tbody > tr:nth-child(even) > td,
+.normal-table tbody > tr:nth-child(even) > th {
+    background-color: #F6F6F6 !important;
+    background: #F6F6F6 !important;
+    border: none;
+}
+
+.normal-table {
+    margin: 0px;
+}
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
