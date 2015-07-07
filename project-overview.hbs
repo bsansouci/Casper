@@ -1,0 +1,54 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main" style="text-align: justify">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    <main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Project Overview</h1>
+        </header>
+
+        <section class="post-content">
+<p>This project will completely renovate Stemmler Hall as part of the University’s Century Bond program, which addresses energy savings opportunities and deferred maintenance needs.  The majority of the building consists of outdated spaces in need of upgrades, not to mention utility infrastructure systems that have reached the end of their useful life.  This project will renovate the building’s utility systems and transform the research laboratories into modern, highly efficient spaces.  The chosen renovation scheme is a multi-phase approach to replace the infrastructure while completely transforming the building into open and efficient BSL-2 wet-bench research laboratory space with corresponding office and collaborative meeting spaces.  The building will remain operational during the renovation construction period.  An early infrastructure phase to support future connections and avoid multiple shutdowns.
+
+
+Specifically, the project scope to be designed will include the following:
+<ul>
+    <li>Temporary mechanical, electrical and plumbing systems to support the multiple phases of the project.</li>
+    <li>Infrastructure upgrades and renovations to the lower floors of the building vacated by PSOM Academic Programs.  Transformation of existing classrooms and auditorium into new laboratory space.     </li>
+    <li>Relocation of the occupants of the upper floors to the newly renovated space on the lower floors, and subsequent renovation of the upper floors. </li>
+    <li>Complete removal of the building systems in the penthouse and replacement with new energy-efficient air-handling units and supporting equipment.  Distribution through the building will be through active chilled beams.  The main air-handling systems will utilize neutral air technology and will incorporate dual energy recovery wheels to serve terminal chilled beams.  AHUs will be manifolded together for redundancy and enhanced performance. </li>
+    <li>Consolidation of the building’s many exhaust fans on the roof into a combined general and fume hood exhaust system using multiple, redundant high dilution fans. </li>
+    <li>New electrical switchgear and distribution.</li>
+    <li>New emergency power generator, with parallel arrangement with existing generator.</li>
+    <li>New windows throughout the building, on the facades which have not yet had window replacement.</li>
+</ul>
+</p>
+
+        </section>
+
+
+    </article>
+</main>
+</main>

@@ -1,0 +1,120 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+<style type="text/css">
+    #contact-table > tr > td {
+        padding: 25px;
+    }
+</style>
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main" style="text-align: justify">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    <main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Contact</h1>
+        </header>
+
+        <section class="post-content" >
+            <table id="contact-table">
+                <tr>
+                    <td>Margo Barnes</td>
+                    <td>University of Pennsylvania | FRES
+                    <table class="normal-table">
+                        <tr>
+                            <td style="background-color: #F6F6F6 !important">M</td>
+                            <td style="background-color: #F6F6F6 !important"><a href="tel://1-484-390-0974">484-390-0974</a></td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td><a href="mailto:mpietras@upenn.edu">mpietras@upenn.edu</td>
+                        </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                    <td>Mike Beatrice</td>
+                    <td>Torcon, Inc. | Full Time On-Site <br />
+                    Project Manager <br />
+                    <table class="normal-table">
+                        <tr>
+                            <td>M</td>
+                            <td><a href="tel://1-215-678-9169">215-678-9169</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: white !important">E</td>
+                            <td style="background-color: white !important"><a href="mailto:mbeatrice@torcon.com">mbeatrice@torcon.com</td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chip Roser</td>
+                    <td>University of Pennsylvania | SP&O, PSOM <br />
+                        Associate Director, Planning, Design and Construction
+                    <table class="normal-table">
+                        <tr>
+                            <td style="background-color: #F6F6F6 !important">M</td>
+                            <td style="background-color: #F6F6F6 !important"><a href="tel://1-267-246-2186">267-246-2186</a></td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td><a href="mailto:rosercm@mail.med.upenn.edu">rosercm@mail.med.upenn.edu</td>
+                        </tr>
+                    </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ken Schettino</td>
+                    <td>Torcon, Inc. | Part Time On-Site <br />
+                        Project Manager
+                        <table class="normal-table">
+                        <tr>
+                            <td>M</td>
+                            <td><a href="tel://1-732-433-2502">732-433-2502</a></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: white !important">E</td>
+                            <td style="background-color: white !important"><a href="mailto:kschettino@torcon.com">kschettino@torcon.com</td>
+                        </tr>
+                    </table>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Val Hardy</td>
+                    <td>University of Pennsylvania | SP&O, PSOM Senior <br /> Building Administrator
+                        <table class="normal-table">
+                        <tr>
+                            <td style="background-color: #F6F6F6 !important">M</td>
+                            <td style="background-color: #F6F6F6 !important"><a href="tel://1-267-353-4204">267-353-4204</a></td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td><a href="mailto:valhardy@mail.med.upenn.edu">valhardy@mail.med.upenn.edu</td>
+                        </tr>
+                    </table>
+                        </td>
+                </tr>
+            </table>
+        </section>
+    </article>
+</main>
+</main>
