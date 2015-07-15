@@ -799,6 +799,7 @@ body.nav-opened .nav {
     white-space: nowrap;
     border-radius: 3px;
     transition: all 0.5s ease;
+    background: #fff;
 }
 .menu-button:before {
     font-size: 12px;
@@ -808,7 +809,8 @@ body.nav-opened .nav {
     top: 1px;
 }
 .menu-button:hover {
-    background: #fff;
+    color: #fff;
+    background: #222;
 }
 .menu-button:focus {
     outline: 0;
@@ -816,11 +818,12 @@ body.nav-opened .nav {
 
 /* When the navigation is closed */
 .nav-closed .menu-button {
-    color: #fff;
+    color: #222;
     border-color: rgba(255, 255, 255, 0.6);
 }
 .nav-closed .menu-button:hover {
-    color: #222;
+    color: #fff;
+    border-color: #fff;
 }
 
 /* When the navigation is closed and there is no cover image */
@@ -872,6 +875,7 @@ body.nav-opened .nav {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .page-description {
@@ -882,6 +886,7 @@ body.nav-opened .nav {
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .no-cover.main-header {
